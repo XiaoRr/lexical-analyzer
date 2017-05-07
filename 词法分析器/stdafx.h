@@ -18,4 +18,5 @@
 #include <string>
 #include <vector>
 #include <streambuf>  
+#include <cctype>
 using namespace std;

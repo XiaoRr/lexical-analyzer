@@ -32,8 +32,5 @@
     <ClCompile Include="词法分析器.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="mytype.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

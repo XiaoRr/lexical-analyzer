@@ -2,9 +2,6 @@
 //
 
 #include "stdafx.h"
-#include "mytype.cpp"
-
-void parse(char);
 
 //枚举类，枚举所有状态
 enum LR{
@@ -169,11 +166,10 @@ void parse(char c) {
 int main()
 {
 	std::ifstream t("test3.txt");
-	std::string all((std::istreambuf_iterator<char>(t)),
-	std::istreambuf_iterator<char>());
+	std::string all((istreambuf_iterator<char>(t)),istreambuf_iterator<char>());	//读取整个文档内容
 	cout << "line" << line++ << " : " ;
-	for (; p < all.length(); p++)
-		parse(all[p]);
+	for (; p < all.length(); p++)	
+		parse(all[p]);	//逐字解析
 	getchar();
     return 0;
 }
